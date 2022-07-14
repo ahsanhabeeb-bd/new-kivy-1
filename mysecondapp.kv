@@ -1,0 +1,35 @@
+<win>
+
+    name : name1
+    pizza : pizza1
+    color : color1
+
+
+    GridLayout:
+        size:root.width,root.height
+        cols:1
+        GridLayout:
+            cols:2
+
+            Label:
+                text:'name'
+            TextInput:
+                id:name1
+                multiline:False
+
+            Label:
+                text:'pizza'
+            TextInput:
+                id : pizza1
+                multiline:False
+
+            Label:
+                text:'color'
+            TextInput:
+                id : color1
+                multiline:False
+
+
+        Button:
+            text:'hi'
+            on_press : root.opr()

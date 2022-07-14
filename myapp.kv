@@ -1,0 +1,44 @@
+<gri>
+
+
+    name:name1
+    pizza:pizza1
+    color:color1
+
+
+    GridLayout:
+        cols:1
+        size: root.width,root.height
+
+        GridLayout:
+            cols:2
+            Label:
+                text:'Name'
+            TextInput:
+                id:name1
+                multiline:False
+
+            Label:
+                text:
+                    'pizza'
+            TextInput:
+                id:pizza1
+                multiline:False
+
+            Label:
+                text:'color'
+            TextInput:
+                id:color1
+                multiline:False
+
+        Button:
+            text:'submit'
+            size_hint_y:None
+            height:30
+            size_hint_x:None
+            width:50
+            on_press:root.pre()
+
+
+
+
