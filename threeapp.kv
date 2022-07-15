@@ -1,0 +1,60 @@
+<Button>
+    font_size:50
+    background_normal:''
+    background_color:(1,0,0,1)
+
+<TextInput>
+    font_size: 50
+    background_normal:''
+    background_color:(50/255,20/255,100/255,1)
+
+<Label>
+    font_size: 50
+
+
+<wid>
+
+
+    BoxLayout:
+        size:root.width,root.height
+        orientation:'vertical'
+
+        spacing :10
+        padding :10
+
+
+        Label:
+            text:'Name'
+        TextInput:
+            multiline:False
+
+        Label:
+            text:'pizza'
+        TextInput:
+            multiline:False
+
+        Button:
+
+            text:'submit'
+
+
+            size_hint:(1,1)
+
+
+        Button:
+            text:'clear'
+
+            background_color:(0,0,1,1)
+
+            size_hint:(1,1)
+
+
+        #Button:
+
+        #   text:'i am here'
+        #   size_hint:(None,None)
+        #   height:50
+        #   width:600
+        #   pos_hint:{'center_x':.5}
+
+
